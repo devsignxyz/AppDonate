@@ -1,0 +1,84 @@
+ <!--Navbar-->
+    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+        <!-- Collapse button-->
+        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i>
+        </button>
+
+        <div class="container">
+
+            <!--Collapse content-->
+            <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                <!--Navbar Brand-->
+                <a class="navbar-brand" href="index.html" target="_blank">DonateLife</a>
+                <!--Links-->
+                <ul class="nav navbar-nav">
+                    <li ng-class="{active:stateis('app')"} class="nav-item active">
+                        <a ui-sref="app" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li ng-class="{active:stateis('app.about')}" class="nav-item">
+                        <a ui-sref="app.about"class="nav-link">Donor</a>
+                    </li>
+                    <li ng-class="{active:stateis('app.bloodb')}" class="nav-item">
+                        <a ui-sref="app.bloodb" class="nav-link" >Blood Bank</a>
+                    </li>
+                    <li ng -class="{active:stateis('app.servs')}"class="nav-item">
+                        <a ui-sref="app.servs" class="nav-link" >Social Services</a>
+                    </li>
+                    <li ng-class="{active:stateis('app.pinfo')}" class="nav-item">
+                        <a ui-sref="app.pinfo" class="nav-link" >Info</a>
+                    </li>
+                    <li ng-class="{active:satateis('app.write')}" class="nav-item">
+                        <a ui-sref="app.write" class="nav-link" href="#">Write</a>
+                    </li>
+                </ul>
+                <!--Search form-->
+                <form class="form-inline">
+                    <input class="form-control" type="text" placeholder="Search">
+                </form>
+            </div>
+            <!--/.Collapse content-->
+
+        </div>
+
+    </nav>
+    <!--/.Navbar-->
+
+   
+   
+   <!--Mask-->
+    <div class="view hm-black-strong">
+        <div class="full-bg-img flex-center">
+            <div class="row animated fadeInUp">
+      <h2>Are you ready to <strong>make a difference</strong></h2>
+      <hr>
+      <div class="col-ml-4 col-ml-offset- ">
+
+        
+        <p>  <a href="#" class="btn btn-lg btn-block btn-default">Find Donor  </a></p>
+
+        
+      </div><!--end col -->
+      <hr>
+      <div class="col-ml-4 col-ml-offset-">
+        
+
+        
+		  <button class="btn btn-lg btn-block btn-default" id="myBtnB"  data-tooggle="modal" >Blood bank </button>
+
+		</div>
+    <hr>
+     <div class="col-ml-4 col-ml-offset-">
+
+        
+		  <button class="btn btn-lg btn-block btn-default" id="myBtn"  data-tooggle="modal" data-target="#modal-register">Become a Donor  </button>
+
+		</div>
+      </div><!--row -->
+    </div><!--Conatiner button -->
+    
+        </div>
+   
+    <!--/.Mask-->
+    <hr>

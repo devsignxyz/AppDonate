@@ -1,0 +1,76 @@
+ <main>
+      
+        <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Welcome to Donate Life</h2>
+                    <p>Where we can make a difference, helping each other, become a true hero.
+               
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+                    
+                </div>
+            </div>
+        </div>
+    </section><!--/#cta-->
+        <hr>
+    <!--Naked Form-->
+    
+    <div class="container" ng-controller="WriteController">
+<div class="card-block">
+
+    <!--Header-->
+    <div class="text-xs-center">
+        <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+        <hr class="m-t-2 m-b-2">
+    </div>
+
+    <!--Body-->
+    <p>We'll write rarely, but only the best content.</p>
+    <br>
+
+    <!--Body-->
+    <div class="md-form" ng-class="{ 'has-error' : feedbackForm.yourname.$error.required && !feedbackForm.yourname.$pristine }">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="yourname." name="form3" ng-model="feedback.yourname" required  class="form-control"><span ng-show="feedbackForm.yourname.$error.required && !feedbackForm.yourname.$pristine" class="help-block">Your Name is required.</span>
+        <label for="form3">Your name</label>
+    </div>
+
+    <div class="md-form" ng-class="{ 'has-error' : feedbackForm.email.$error.required && !feedbackForm.email.$pristine }">
+        <i class="fa fa-envelope prefix"></i>
+        <input type="email" id="emailid"  ng-model="feedback.email" required name="form2" class="form-control">
+        <span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine"  aria-hidden="true"></span>
+        <span ng-show="feedbackForm.emailid.$error.required && !feedbackForm.emailid.$pristine" class="help-block">Your Email is required.</span>
+        <label for="form2">Your email</label>
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-tag prefix"></i>
+        <input type="text" id="form32" class="form-control">
+        <label for="form34">Subject</label>
+    </div>
+
+    <div class="md-form">
+        <i class="fa fa-pencil prefix"></i>
+        <textarea type="text" id="feedback" name="form8" class="md-textarea" ng-model="feedback.comments"></textarea>
+        <label for="form8">Your message</label>
+    </div>
+
+    <div class="text-xs-center">
+        <button class="btn btn-default" ng-disabled="feedbackForm.$invalid">Submit</button>
+
+        <div class="call">
+            <br>
+            <p>Or would you prefer to call?
+                <br>
+                <span><i class="fa fa-phone"> </i></span> + 01 234 565 280</p>
+        </div>
+    </div>
+
+</div>
+</div>
+<!--Naked Form-->
+   
+  

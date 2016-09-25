@@ -1,0 +1,30 @@
+/* YOUR CUSTOM STYLES */
+
+ /* TEMPLATE STYLES */
+        
+html,
+body,
+.view {
+	height: 100%;
+}
+/* Navigation*/
+
+.navbar {
+	background-color: transparent;
+}
+
+.scrolling-navbar {
+	-webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	-moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+	transition: background .5s ease-in-out, padding .5s ease-in-out;
+}
+
+/*botones*/
+.btn-default {
+background: #E91E63;
+}
+.btn-default :hover{
+color:#448AFF;
+
+}
+
