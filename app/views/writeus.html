@@ -1,0 +1,102 @@
+
+
+
+<section class="section m-b-4">
+<div class="container">
+    <!--Section heading-->
+    <h1 class="section-heading">Contact v.1</h1>
+    <!--Section sescription-->
+    <p class="section-description m-b-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam. Quia, minima?</p>
+
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-5">
+
+            <!--Form with header-->
+            <div class="card">
+
+                <div class="card-block"name="feedbackForm" ng-submit="sendFeedback()" novalidate >
+                    <!--Header-->
+                    <div class="form-header mdb-color">
+                        <h3><i class="fa fa-envelope"></i> Write to us:</h3>
+                    </div>
+
+                    <p>We'll write rarely, but only the best content.</p>
+                    <br>
+
+                    <!--Body-->
+                    <div class="md-form" ng-class="{ 'has-error' : feedbackForm.yourname.$error.required && !feedbackForm.yourname.$pristine }">
+                        <i class="fa fa-user prefix"></i>
+                        <input type="text" id="yourname" class="form-control" id="yourname" name="yourname"  ng-model="feedback.yourName" required>
+                        <span ng-show="feedbackForm.yourname.$error.required && !feedbackForm.yourname.$pristine" class="help-block">Your  name is required.</span>
+                        <label for="yourname" >Your name</label>
+                    </div>
+
+                    <div class="md-form" ng-class="{ 'has-error' : feedbackForm.email.$error.required && !feedbackForm.email.$pristine }">
+                        <i class="fa fa-envelope prefix"></i>
+                        <input type="email" id="emailid"name="emailid" ng-model="feedback.email" required class="form-control"><span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine" class="help-block">
+                        <span ng-show="feedbackForm.emailid.$invalid && !feedbackForm.emailid.$pristine" class="help-block">Enter a valid email address.</span>
+                        <label for="emailid"> email</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-tag prefix"></i>
+                        <input type="text" id="form32" class="form-control">
+                        <label for="form32">Subject</label>
+                    </div>
+
+                    <div class="md-form">
+                        <i class="fa fa-pencil prefix"></i>
+                        <textarea type="text" id="form8" class="md-textarea"></textarea>
+                        <label for="form8">Icon Prefix</label>
+                    </div>
+
+                    <div class="text-xs-center">
+                        <button class="btn btn-ins" type="submit" ng-disabled="feedbackForm.$invalid">Submit</button>
+                    </div>
+
+                </div>
+
+            </div>
+            <!--/Form with header-->
+
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-7">
+
+            <!--Google map-->
+            <div id="map-container" class="z-depth-1-half map-container" style="height: 400px"></div>
+
+            <br>
+            <!--Buttons-->
+            <div class="row text-xs-center">
+                <div class="col-md-4">
+                    <a class="btn-floating btn-small mdb-color"><i class="fa fa-map-marker"></i></a>
+                    <p>New York, NY 10012</p>
+                    <p>United States</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="btn-floating btn-small mdb-color"><i class="fa fa-phone"></i></a>
+                    <p>+ 01 234 567 89</p>
+                    <p>Mon - Fri, 8:00-22:00</p>
+                </div>
+
+                <div class="col-md-4">
+                    <a class="btn-floating btn-small mdb-color"><i class="fa fa-envelope"></i></a>
+                    <p>info@gmail.com</p>
+                    <p>sale@gmail.com</p>
+                </div>
+            </div>
+
+        </div>
+        <!--/Second column-->
+
+    </div>
+    </div>
+
+</section>
+<!--/Section: Contact v.1-->

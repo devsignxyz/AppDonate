@@ -1,5 +1,6 @@
    <!--Footer-->
-    <footer class="page-footer center-on-small-only">
+    <footer class="page-footer center-on-small-only" style="background-color: #1C2331;
+            margin-top: -1px;">
 
         <!--Footer Links-->
         <div class="container-fluid">
@@ -21,12 +22,13 @@
                 <div class="col-md-2 offset-md-1">
                     <h5 class="title">Places</h5>
                     <ul>
-                        <li><a ui-sref="app"><i class="fa fa-home"></i> Home</a></li>
-                        <li><a ui-sref="app.find"><i class="fa fa-group"></i> Donor</a></li>
-                        <li><a ui-sref="app.bloddb"><i class="fa fa-building"></i> Blood Bank </a></li>
-                        <li><a ui-sref="app.servs"><i class="fa fa-blind"></i> Social Services</a></li>
-                         <li><a ui-sref="app.pinfo"><i class="fa fa-info-circle"></i> Info </a></li>
-                         <li><a ui-sref="app.write"><i class="fa fa-pencil"></i>Write </a></li>
+                        <li ng-class="{active:stateis('app')}"><a ui-sref="app"><i class="fa fa-home"></i> Home</a></li>
+                        <li ng-class="{active:stateis('app.find')}"><a ui-sref="app.find"><i class="fa fa-group"></i> Donor</a></li>
+                        <li ng-class="{active:stateis('app.bloodb')}"><a ui-seref="app.bloodb"><i class="fa fa-building"></i> Blood Bank </a></li>
+                        <li><a href="#!"><i class="fa fa-blind"></i> Social Services</a></li>
+                         <li><a href="#!"><i class="fa fa-info-circle"></i>About </a></li>
+                         <li><a href="#!"><i class="fa fa-pencil"></i>Write </a></li>
+                         <li><a href="#!"><i class="fa fa-pencil"></i>info </a></li>
                     </ul>
                 </div>
                 <!--/.Second column-->
@@ -37,8 +39,8 @@
                 <div class="col-md-2">
                     <h5 class="title">Contact</h5>
                     <ul>
-						<li><a href=mailto:team@donatelife.com><i class="fa fa-envelope-o"> </i> team@donatelife.com</a></li>
-                        <li><a href=mailto:soportedonatelife.com><i class="fa fa-envelope-o"></i>soporte@donatelife.com</a></li>
+						<li><a href="#!"><i class="fa fa-envelope-o"> </i> team@donatelife.com</a></li>
+                        <li><a href="#!"><i class="fa fa-envelope-o"></i>soporte@donatelife.com</a></li>
                         <li><a href="#!"><i class="fa fa-skype"></i> Skype</a></li>
                         <li><a href="#!"><i class="fa fa-phone"></i> 58+286-9712433</a></li>
                     </ul>
@@ -74,7 +76,7 @@
                 <li>
                     <h4>Get our Mobile App</h4></li>
                 <li><a target="_blank" href="#" class="">Sign up!</a></li>
-                <li><a target="_blank" href="#" class=""><img src="img/android-app-on-google-play_1.png" alt=""></a></li>
+                <li><a target="_blank" href="#" class=""><img src="/app/images/android-app-on-google-play_1.png" alt=""></a></li>
             </ul>
             <div class="container">
         	<hr class="hidden-md-up">
@@ -107,3 +109,4 @@
 
     </footer>
     <!--/.Footer-->
+

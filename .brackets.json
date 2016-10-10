@@ -1,0 +1,10 @@
+{
+    "jscodehints.detectedExclusions": [
+        "C:/Users/Jorgue/Documents/AppDonate/bower_components/jquery/src/deferred.js",
+        "C:/Users/Jorgue/Documents/AppDonate/bower_components/jquery/src/ajax/xhr.js",
+        "C:/Users/Jorgue/Documents/AppDonate/bower_components/ng-dialog/js/ngDialog.min.js",
+        "C:/Users/Jorgue/Documents/AppDonate/bower_components/jquery/src/attributes/attr.js",
+        "C:/Users/Jorgue/Documents/AppDonate/bower_components/jquery/src/attributes/classes.js",
+        "C:/Users/Jorgue/Documents/AppDonate/bower_components/jquery/src/attributes/support.js"
+    ]
+}

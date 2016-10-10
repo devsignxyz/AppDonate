@@ -1,0 +1,208 @@
+<main>
+      
+        <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Welcome to Donate Life</h2>
+                   <div><p>Where we can make a difference, helping each other, become a true hero.
+               
+                    </p></div>
+                </div>
+                <div class="col-sm-3 text-right">
+                    
+                </div>
+            </div>
+        </div>
+    </section><!--/#cta-->
+        <hr>
+       <!--Section: Blog v.1-->
+       <div class="container">
+<section class="section extra-margins">
+
+    <!--Section heading-->
+    <h1 class="section-heading">Meet some ways to help </h1>
+    <!--Section sescription-->
+    <p class="section-description">Learn a little more how you can help, that meet requirements for donor, providing assistance and cooperation to other ..</p>
+
+    <!--First row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-5 m-b-r">
+            <!--Featured image-->
+            <div ng-if="!showInfo">
+                    <h3>{{message}}</h3>
+                </div>
+            <div class="view overlay hm-white-slight" ng-if="showDish">
+                <img ng-src="{{info.image}}">
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-7 m-b-r">
+            <!--Excerpt-->
+            
+            <h4>{{info.titulo}}</h4>
+            <p>{{info.description}} </p>
+           
+            
+            <button class="btn btn-cyan">Read more</button>
+        </div>
+        <!--/Second column-->
+
+    </div>
+    <!--/First row-->
+
+    <hr>
+
+    <!--Second row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-7 m-b-r">
+            <!--Excerpt-->
+            
+            <h4>{{info1.titulo}}</h4>
+            <p>{{info1.description}} </p>
+            
+            
+            <button class="btn btn-cyan">Read more</button>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-5 m-b-r">
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight">
+                <img ng-src="info1.image">
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+        </div>
+        <!--/Second column-->
+
+    </div>
+    <!--/Second row-->
+
+    <hr>
+
+    <!--Third row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-5 m-b-r">
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight">
+                <img ng-src="info.image">
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-7 m-b-r">
+            <!--Excerpt-->
+           
+            <h4>info2.titulo</h4>
+            <p>{{info2.description}} </p>
+            
+           
+            <button class="btn btn-cyan">Go more</button>
+        </div>
+        <!--/Second column-->
+
+    </div>
+    <!--/Third row-->
+
+</section>
+		 </div>
+<!--/Section: Blog v.1-->
+
+        
+       
+           
+           
+           
+           
+           <!--========================================make a difwerence==================================-->
+     
+         <section id="signup" data-type="backgraound" data-speed="4">
+
+  <div class="container">
+
+    <div class="row">
+      <h2>Are you ready to <strong>make a difference</strong></h2>
+      <hr>
+      <div class="col-sm-6 col-sm-offset-">
+
+        
+        <p>  <a href="#" class="btn btn-lg btn-block btn-default">Services Social  </a></p>
+
+        
+      </div><!--end col -->
+      <div class="col-sm-6 col-sm-offset-">
+
+        
+		  <button class="btn btn-lg btn-block btn-default" id="myBtn"  data-tooggle="modal" data-target="#modal-register">Become a Donor  </button>
+
+        
+      </div><!--end col -->
+    </div><!--row -->
+    
+    
+    
+    
+    
+    
+    
+    ///////////CODE FOR COMMENT//////////
+    $scope.mycomment = {
+        rating: 5,
+        comment: ""
+    };
+
+    $scope.submitComment = function () {
+
+        commentFactory.save({id: $stateParams.id}, $scope.mycomment);
+
+        $state.go($state.current, {}, {reload: true});
+        
+        $scope.commentForm.$setPristine();
+
+        $scope.mycomment = {
+            rating: 5,
+            comment: ""
+        };
+    }
+    
+    
+     /////////////OTHER CODE PARA CREATEDONOR///
+    
+    $scope.save = function(){
+    if(!$scope.newDonor || $scope.newDonor.length < 1) return;
+    var todo = new Donors({ name: $scope.newDonor, email:$scope.newDonor,bloodtype:$scope.newDonor,location:$scope.newDonor, completed: false });
+    todo.$save(function(){
+      $scope.donors.push(donor);
+      $scope.newDonor = ''; // clear textbox
+    });
+        
+        
+        $scope.newDonorForm.$setPristine();
+
+        $scope.newDonor = {
+            name: "",
+            email: "",
+            bloodtype:"",
+            location:"",
+    
+        };
+  }
+        

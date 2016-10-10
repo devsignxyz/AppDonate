@@ -1,41 +1,29 @@
-<main>
-      
-        <section id="cta" class="wow fadeIn">
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-9">
-                    <h2>Welcome to Donate Life</h2>
-                   <div><p>Where we can make a difference, helping each other, become a true hero.
-               
-                    </p></div>
-                </div>
-                <div class="col-sm-3 text-right">
-                    
-                </div>
-            </div>
-        </div>
-    </section><!--/#cta-->
-        <hr>
+
+    
+       <main>
        <!--Section: Blog v.1-->
        <div class="container">
 <section class="section extra-margins">
 
     <!--Section heading-->
-    <h1 class="section-heading">Meet some ways to help </h1>
+    <h1 class="section-heading">Welcome to Donate Life </h1>
     <!--Section sescription-->
-    <p class="section-description">Learn a little more how you can help, that meet requirements for donor, providing assistance and cooperation to other ..</p>
-
+    <h5 class="section-description">Where we can make a difference, helping each other , become a true hero .</h5>
+<hr>
     <!--First row-->
     <div class="row">
 
+                
         <!--First column-->
         <div class="col-md-5 m-b-r">
-            <!--Featured image-->
             <div ng-if="!showInfo">
                     <h3>{{message}}</h3>
                 </div>
-            <div class="view overlay hm-white-slight" ng-if="showDish">
-                <img ng-src="{{info.image}}">
+            <!--Featured image-->
+            
+            <div class="view overlay hm-white-slight">
+               
+                <img ng-src={{info.image}} alt="">
                 <a>
                     <div class="mask"></div>
                 </a>
@@ -47,14 +35,12 @@
         <div class="col-md-7 m-b-r">
             <!--Excerpt-->
             
-            <h4>{{info.titulo}}</h4>
-            <p>{{info.description}} </p>
-           
+            <h3>{{info.titulo}}</h3>
             
-            <button class="btn btn-cyan">Read more</button>
+            <a class="btn btn-cyan" ui-sref="app.pinfo">Read more</a>
         </div>
         <!--/Second column-->
-
+        
     </div>
     <!--/First row-->
 
@@ -66,12 +52,11 @@
         <!--First column-->
         <div class="col-md-7 m-b-r">
             <!--Excerpt-->
+           
+            <h3>{{donor.name}}.</h3>
+            <h3>Join or find your Giver </h3>
             
-            <h4>{{info1.titulo}}</h4>
-            <p>{{info1.description}} </p>
-            
-            
-            <button class="btn btn-cyan">Read more</button>
+            <a class="btn btn-cyan" ui-sref="app.find">Go</a>
         </div>
         <!--/First column-->
 
@@ -79,7 +64,7 @@
         <div class="col-md-5 m-b-r">
             <!--Featured image-->
             <div class="view overlay hm-white-slight">
-                <img ng-src="info1.image">
+                <a ui-sref="app.find"> <img  src="/app/images/1052.jpg" alt=""></a>
                 <a>
                     <div class="mask"></div>
                 </a>
@@ -99,7 +84,7 @@
         <div class="col-md-5 m-b-r">
             <!--Featured image-->
             <div class="view overlay hm-white-slight">
-                <img ng-src="info.image">
+                <img ng-src={{need.image}} alt="">
                 <a>
                     <div class="mask"></div>
                 </a>
@@ -110,12 +95,11 @@
         <!--Second column-->
         <div class="col-md-7 m-b-r">
             <!--Excerpt-->
-           
-            <h4>info2.titulo</h4>
-            <p>{{info2.description}} </p>
+            <a href="" class="pink-text"><h5><i class="fa fa-suitcase"></i>HERO</h5></a>
+            <h3>{{need.name}}</h3>
+            <p>You need some help </p>
             
-           
-            <button class="btn btn-cyan">Go more</button>
+            <a class="btn btn-cyan" ui-sref="app.servs">Go</a>
         </div>
         <!--/Second column-->
 
@@ -125,16 +109,8 @@
 </section>
 		 </div>
 <!--/Section: Blog v.1-->
-
-        
-       
-           
-           
-           
-           
-           <!--========================================make a difwerence==================================-->
-     
-         <section id="signup" data-type="backgraound" data-speed="4">
+   
+   <section id="signup" data-type="backgraound" data-speed="4">
 
   <div class="container">
 
@@ -144,15 +120,18 @@
       <div class="col-sm-6 col-sm-offset-">
 
         
-        <p>  <a href="#" class="btn btn-lg btn-block btn-default">Services Social  </a></p>
-
+        <button type="button" class="btn btn-pink btn-lg btn-block" ui-sref="app.servs">Social Services</button>
         
       </div><!--end col -->
       <div class="col-sm-6 col-sm-offset-">
 
         
-		  <button class="btn btn-lg btn-block btn-default" id="myBtn"  data-tooggle="modal" data-target="#modal-register">Become a Donor  </button>
-
+		  <button type="button" class="btn btn-pink btn-lg btn-block" ui-sref="app.become">Blood Bank</button>
         
       </div><!--end col -->
     </div><!--row -->
+    
+    <hr>
+    </main>
+    
+    

@@ -1,84 +1,129 @@
- <!--Navbar-->
-    <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+ <!--Navigation & Intro-->
+   
 
-        <!-- Collapse button-->
-        <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
-            <i class="fa fa-bars"></i>
-        </button>
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
 
-        <div class="container">
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i></button>
 
-            <!--Collapse content-->
-            <div class="collapse navbar-toggleable-xs" id="collapseEx">
-                <!--Navbar Brand-->
-                <a class="navbar-brand" href="index.html" target="_blank">DonateLife</a>
-                <!--Links-->
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand" href="#/" target="_blank">DonateLife</a>
+                    <!--Links-->
                 <ul class="nav navbar-nav">
-                    <li ng-class="{active:stateis('app')"} class="nav-item active">
-                        <a ui-sref="app" class="nav-link">Home <span class="sr-only">(current)</span></a>
+                    <li ng-class="{active:stateis('app')}" class="nav-item ">
+                        <a class="nav-link" ui-sref="app">Home <span class="sr-only">(current)</span></a>
                     </li>
-                    <li ng-class="{active:stateis('app.about')}" class="nav-item">
-                        <a ui-sref="app.about"class="nav-link">Donor</a>
+                    <li ng-class="{active:stateis('app.find')|| stateis('app.perfildetail')}" class="nav-item">
+                        <a class="nav-link" ui-sref="app.find">Find a Donor</a>
                     </li>
                     <li ng-class="{active:stateis('app.bloodb')}" class="nav-item">
-                        <a ui-sref="app.bloodb" class="nav-link" >Blood Bank</a>
+                        <a class="nav-link" ui-sref="app.bloodb">Blood Bank</a>
                     </li>
-                    <li ng -class="{active:stateis('app.servs')}"class="nav-item">
-                        <a ui-sref="app.servs" class="nav-link" >Social Services</a>
+                     
+                    <li ng-class="{active:stateis('app.servs')}"  class="nav-item">
+                        <a class="nav-link" ui-sref="app.servs">Social Services</a>
                     </li>
-                    <li ng-class="{active:stateis('app.pinfo')}" class="nav-item">
-                        <a ui-sref="app.pinfo" class="nav-link" >Info</a>
+                   
+                    <li ng-class="{active:stateis('app.favoriteDonor')}"  class="nav-item">
+                        <a class="nav-link" ui-sref="app.favoriteDonor">FavoriteDonors</a>
                     </li>
-                    <li ng-class="{active:satateis('app.write')}" class="nav-item">
-                        <a ui-sref="app.write" class="nav-link" href="#">Write</a>
-                    </li>
+                                        
+<li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Know us</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        
+                        <a class="dropdown-item" ng-class="{active:stateis('app.about')}"  ui-sref="app.about">About</a>
+                   
+                        <a class="dropdown-item" ui-sref="app.pinfo">Information</a>
+                         <a class="dropdown-item" ui-sref="app.writeus">Writeus</a>
+                    </div>
+                </li>
+                   
+                    
+                    
                 </ul>
-                <!--Search form-->
-                <form class="form-inline">
-                    <input class="form-control" type="text" placeholder="Search">
-                </form>
+                    <!--Navbar icons-->
+                    <ul class="nav navbar-nav nav-flex-icons">
+                        <li ng-if="!loggedIn"><a ng-click="openLogin()" class="nav-link">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                    <li ng-if="loggedIn">
+                    <a>{{username}}</a>
+                    </li>
+                    <li ng-if="loggedIn">
+                    <a ng-click="logOut()">
+                    <span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                    </li>
+                    </ul>
+
+                </div>
+                <!--/.Collapse content-->
+
             </div>
-            <!--/.Collapse content-->
 
-        </div>
+        </nav>
+        <!--/.Navbar-->
+<header class="jumbotron   ">
 
-    </nav>
-    <!--/.Navbar-->
+        <!-- Main component for a primary marketing message or call to action -->
 
-   
-   
-   <!--Mask-->
-    <div class="view hm-black-strong">
-        <div class="full-bg-img flex-center">
-            <div class="row animated fadeInUp">
-      <h2>Are you ready to <strong>make a difference</strong></h2>
-      <hr>
-      <div class="col-ml-4 col-ml-offset- ">
+          <div class=" hm-black-strong ">
+            <div class="full-bg-img flex-center ">
+                <div class="container">
+                    <div class="row" id="home">
+
+                        <!--First column-->
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <h2 class="h2-responsive wow fadeInLeft">Are you Ready to make a Difference </h2>
+                                <hr class="hr-dark">
+                                <p class="wow fadeInLeft" data-wow-delay="0.4s">Welcome, here you can help many to be helped, become a hero by helping others, who knows then another may help. It is simple blood donation can save many lives, it is very important to know a little more touring the site..</p>
+                                <br>
+                                <div class="col-ml-4 col-ml-offset-">
 
         
-        <p>  <a href="#" class="btn btn-lg btn-block btn-default">Find Donor  </a></p>
+                                    <button type="button" class="btn btn-pink btn-lg btn-block"><a style="color:white" ui-sref="app.find" >Find Donor</a></button>
+        
+      </div><!--end col -->
+      <hr>
+                               <div class="col-ml-4 col-ml-offset-">
+
+        
+        <button type="button" class="btn btn-pink btn-lg btn-block"><a style="color:white"  ui-sref="app.become">Blood Bank button</a></button>
 
         
       </div><!--end col -->
       <hr>
-      <div class="col-ml-4 col-ml-offset-">
-        
+                               <div class="col-ml-4 col-ml-offset-">
 
         
-		  <button class="btn btn-lg btn-block btn-default" id="myBtnB"  data-tooggle="modal" >Blood bank </button>
-
-		</div>
-    <hr>
-     <div class="col-ml-4 col-ml-offset-">
+        <button type="button" class="btn btn-pink btn-lg btn-block"><a style="color:white" ui-sref="app.servs">Social Services</a></button>
 
         
-		  <button class="btn btn-lg btn-block btn-default" id="myBtn"  data-tooggle="modal" data-target="#modal-register">Become a Donor  </button>
+      </div><!--end col -->
+      <hr>
+                                
 
-		</div>
-      </div><!--row -->
-    </div><!--Conatiner button -->
-    
+                            </div>
+                        </div>
+                        <!--/.First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-4 col-lg-offset-1 flex-center">
+                            <!--Form-->
+                            
+                            <!--/.Form-->
+                        </div>
+                        <!--/Second column-->
+                    </div>
+                </div>
+            </div>
         </div>
-   
-    <!--/.Mask-->
-    <hr>
+        <!--/.Mask-->
+    </header>

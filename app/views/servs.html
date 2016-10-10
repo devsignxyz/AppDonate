@@ -1,81 +1,74 @@
  <main>
-     <section id="cta" class="wow fadeIn">
+  
+       <section id="cta" class="wow fadeIn">
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
                     <h2>Social Services</h2>
-                    <p>Desarrollo de aplicaciones web y aplicaciones moviles hibridas, todo el desarrollo full stack, desarrollamos tu idea y l hacemos realidad, contactanos y juntos crearemos esa aplicacion que tantos sueñas.
+                    <p>social services, you need some help, simply fill out the form other heroes will come to the rescue, then you can be your one to help
                
                     </p>
                 </div>
-                <div class="col-sm-3 text-right">
-                    <a class="btn btn-primary btn-lg" href="https://devsignxyz.typeform.com/to/wYU7Tt" target="_blank">Contactarnos!</a>
-                </div>
+                
             </div>
         </div>
     </section><!--/#cta-->
+   <div class="container">
+    <section class="section">
+
+    <!--Section heading-->
+    
+
+    <div class="row">
+
+        <!--First column -->
+        <div class="col-lg-12 col-md-12 m-b-r" ng-repeat="need in needs">
+            <a ui-sref="app.needDetail({id: need._id})"></a>
+
+            <!--Card-->
+            <div class="card testimonial-card">
+
+                <!--Background color-->
+                <div class="card-up teal lighten-2">
+                </div>
+
+                <!--Avatar-->
+                <a ui-sref="app.needDetail({id: need._id})">
+                <div class="avatar"><img ng-src="{{need.image}}">
+                </div>
+                </a>
+
+                <div class="card-block">
+                    <!--Name-->
+                    <a ui-sref="app.needDetail({id: need._id})">
+                        <h4 class="card-title">{{need.name}}</h4></a>
+                    <hr>
+                    <!--Quotation-->
+                    <p><i class="fa fa-quote-left"></i> {{need.description}}</p>
+                </div>
+
+            </div>
+            
+            <!--/.Card-->
+
+
+        </div>
+        <!--/First column -->
+
+        
+
+        <!--Third column-->
+      
+    </div>
+
+</section>
+     </div><!--end conatiner-->
+<!--Section: Testimonials v.1-->
+
         <hr>
         
-        <div class="container">
-        	<div class="row">
-        		 <div class="col-xs-6 ">
-        			
-        			<ul class="list-unstyled">
-                        <li ng-repeat="comment in dish.comments | orderBy:orderText">
-                          <blockquote>
-                             <p><strong>Nececito:</strong>fsdfsdfsfsdfsddfsdfsfsdfsfsdff</p>
-                             <p><strong>Contactame:</strong>email@email.com</p>
-                             <footer>postedBy. lastname .updatedAt | date:'MMM. dd, yyyy'}}</footer>
-                          </blockquote>
-                        </li>
-                    </ul>
- 	       		</div><!--col-->
- 	       		<div class="col-xs-6">
- 	       			
- 	       			<!--Form without header-->
-<div class="card">
-    <div class="card-block">
-
-        <!--Header-->
-        <div class="text-xs-center">
-            <h3><i class="fa fa-pencil"></i> Solicita Ayuda</h3>
-            <hr class="m-t-2 m-b-2">
-        </div>
-
-        <!--Body-->
-        <p>Simplemente rellena y envia .</p>
-        <br>
-
-        <!--Body-->
-        <div class="md-form">
-            <i class="fa fa-user prefix"></i>
-            <input type="text" id="form3" class="form-control">
-            <label for="form3">Your name</label>
-        </div>
-
-        <div class="md-form">
-            <i class="fa fa-envelope prefix"></i>
-            <input type="text" id="form2" class="form-control">
-            <label for="form2">Your email</label>
-        </div>
-        <div class="md-form">
-            <i class="fa fa-envelope prefix"></i>
-            <input type="text" id="form1" class="form-control">
-            <label for="form2">Necesito</label>
-        </div>
-
-        <div class="text-xs-center">
-            <button class="btn btn-default">Send</button>
-        </div>
-
-    </div>
-</div>
-<!--/Form without header-->
- 	       			
- 	       		</div>
-        	</div><!--row-->
-        </div><!--Container-->
-        <hr>
+  
+      
         
     	
     	

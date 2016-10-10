@@ -9,17 +9,12 @@
  * Main module of the application.
  */
 angular
-  .module('appDonateApp', [
-    'ngAnimate',
-    'ngCookies',
-    'ngResource',
-    'ngRoute',
-    'ngSanitize',
-    'ngTouch'
-	'ui.router'
-  ])
-  .config(function ($stateprovider,$routeProvider) {
-    $stateprovider
+  .module('appDonateApp', ['ui.router','ngResource',
+    'ngRoute','ngDialog',])
+.config(function($stateProvider, $urlRouterProvider) 
+        
+        {
+        $stateProvider
 	
      // route for the home page
             .state('app', {
@@ -27,11 +22,12 @@ angular
                 views: {
                     'header': {
                         templateUrl : 'views/header.html',
-                          controller  : 'HeaderController'
+                          
                     },
                     'content': {
                         templateUrl : 'views/home.html',
-                        controller  : 'HomeController'
+                        controller :
+                        'HomeController'
                     },
                     'footer': {
                         templateUrl : 'views/footer.html',
@@ -46,7 +42,7 @@ angular
                 views: {
                     'content@': {
                         templateUrl : 'views/find.html',
-                        controller  : 'FindController'                  
+                        controller  : 'findDonorController'                  
                     }
                 }
             })
@@ -72,27 +68,69 @@ angular
                     }
                 }
             })
+        
+           // route for the needdetail page
+        .state('app.needDetail',{
+            
+            url: 'help/:id',
+            views: {
+                
+                'content@' : {
+                    templateUrl:
+                    'views/needDetail.html',
+                    controller :
+                    'NeedDetailController'
+                }
+            }
+        })
 
             // route for the perfildetail page
-            .state('app.perfilDetail', {
+            .state('app.perfildetail', {
                 url: 'perfildetail/:id',
                 views: {
                     'content@': {
-                        templateUrl : 'views/perfilDetail.html',
-                        controller  : 'PerfildetailController'
+                        templateUrl : 'views/perfildetail.html',
+                        controller  : 'PerfilDetailsController'
+                   }
+                }
+            })
+        
+     
+        
+        
+        
+            .state('app.pinfo', {
+                url: 'pinfo/:id',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/pinfo.html',
+                        controller  : 'infoController'
                    }
                 }
             })
 	// route for the write page
-            .state('app.write', {
-                url: 'write',
+            .state('app.become', {
+                url: 'become',
                 views: {
                     'content@': {
-                        templateUrl : 'views/write.html',
-                        controller  : 'writeController'
+                        templateUrl : 'views/become.html',
+                        controller  : 'DonorController'
                    }
                 }
             })
+        
+        // route for the about page
+            .state('app.about', {
+                url: 'about',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/about.html',
+                        controller  : 'AboutController'
+                   }
+                }
+            })
+        
+        
         
             // route for the favorite page
             .state('app.favoriteDonor', {
@@ -101,6 +139,17 @@ angular
                     'content@': {
                         templateUrl : 'views/favoriteDonor.html',
                         controller  : 'FavoriteController'
+                   }
+                }
+            })
+    
+            // route for the write us page
+            .state('app.writeus', {
+                url: 'writeus',
+                views: {
+                    'content@': {
+                        templateUrl : 'views/writeus.html',
+                        controller  : 'WriteController'
                    }
                 }
             });

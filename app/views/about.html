@@ -4,13 +4,10 @@
             <div class="row">
                 <div class="col-sm-9">
                     <h2>About</h2>
-                    <p>Desarrollo de aplicaciones web y aplicaciones moviles hibridas, todo el desarrollo full stack, desarrollamos tu idea y l hacemos realidad, contactanos y juntos crearemos esa aplicacion que tantos sueñas.
-               
+                    <p>Donatelife, it born as the final draft of a specialization conducted in Coursera offered by Hong Kong University of Science Technology, with great teachers especially Jossep Muppala whom I am enormously I agrdecido for such a great effort in this specialization. to Coursera for the opportunity to many people around the world to obtain this type of preparation, so I present the team.
                     </p>
                 </div>
-                <div class="col-sm-3 text-right">
-                    <a class="btn btn-primary btn-lg" href="https://devsignxyz.typeform.com/to/wYU7Tt" target="_blank">Contactarnos!</a>
-                </div>
+               
             </div>
         </div>
     </section><!--/#cta-->
@@ -18,19 +15,21 @@
         
 <!--Section: Team v.2-->
 <section class="section team-section "> 
-<div class="container" ng-controller="AboutController">
+<div class="container" >
     <!--Section heading-->
-    <h1 class="section-heading ">Our amazing team v.2</h1>
+    <h1 class="section-heading ">Our amazing team </h1>
     <!--Section sescription-->
-    <p class="section-description ">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Fugit, error amet numquam iure provident voluptate esse quasi, veritatis totam voluptas nostrum quisquam eum porro a pariatur accusamus veniam.</p>
+    <p class="section-description "></p>
 
     <div class="row text-xs-center">
 
         <!--First column-->
-        <div class="col-md-4 m-b-r">
+        <div class="col-md-4 m-b-r" ng-repeat="team in teams">
             <div class="avatar">
-                <img ng-src="team.image">
+                <img ng-src="{{team.image}}">
+                
             </div>
+            
             <h4>{{team.name}}</h4>
             <h5>{{team.designation}}</h5>
 
@@ -44,41 +43,7 @@
         </div>
         <!--/First column-->
 
-        <!--Second column-->
-        <div class="col-md-4 m-b-r">
-            <div class="avatar">
-                <img ng-src="team.iamge">
-            </div>
-            <h4>{{tema.name}}</h4>
-            <h5>{{team.designation}}</h5>
-
-            <!--Google +-->
-            <a type="button" class="btn-floating btn-small btn-gplus"><i class="fa fa-google-plus"></i></a>
-            <!--Facebook-->
-            <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
-            <!--GitHub-->
-            <a type="button" class="btn-floating btn-small btn-git"><i class="fa fa-github"></i></a>
-
-        </div>
-        <!--/Second column-->
-
-        <!--Third column-->
-        <div class="col-md-4 m-b-r">
-            <div class="avatar">
-                <img ng-src="team.image">
-            </div>
-            <h4>{{team.name}}</h4>
-            <h5>{{team.designation}}</h5>
-
-            <!--Linkedin-->
-            <a type="button" class="btn-floating btn-small btn-li"><i class="fa fa-linkedin"></i></a>
-            <!--Twitter-->
-            <a type="button" class="btn-floating btn-small btn-tw"><i class="fa fa-twitter"></i></a>
-            <!--Dribbble-->
-            <a type="button" class="btn-floating btn-small btn-dribbble"><i class="fa fa-dribbble"></i></a>
-
-        </div>
-        <!--/Third column-->
+       
     </div>
 	</div><!--end container-->
 

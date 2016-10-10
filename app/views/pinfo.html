@@ -3,221 +3,61 @@
         <div class="container">
             <div class="row">
                 <div class="col-sm-9">
-                    <h2>Informate </h2>
-                    <p>Desarrollo de aplicaciones web y aplicaciones moviles hibridas, todo el desarrollo full stack, desarrollamos tu idea y l hacemos realidad, contactanos y juntos crearemos esa aplicacion que tantos sueñas.
+                    <h2>Stay informed </h2>
+                    <p>Learn a little more about how being a donor and conditions
                
                     </p>
                 </div>
-                <div class="col-sm-3 text-right">
-                    <a class="btn btn-primary btn-lg" href="https://devsignxyz.typeform.com/to/wYU7Tt" target="_blank">Contactarnos!</a>
-                </div>
+                
             </div>
         </div>
     </section><!--/#cta-->
         <hr>
-      <!--Section: Blog v.4-->
-      <div class="container">
-<section class="section section-blog-fw">
+        
+        <div class="container">
+<div class="card" ng-repeat="info in infos">
 
-    <!--First row-->
-    <div class="row">
-        <div class="col-md-12">
-            <!--Featured image-->
-            <div class="view overlay hm-white-slight">
-                <img src="http://mdbootstrap.com/images/slides/slide%20(42).jpg">
-                <a>
-                    <div class="mask "></div>
-                </a>
-            </div>
-
-            <!--Post data-->
-            <div class="jumbotron">
-                <h2><a>Journey of my life - three months in the Amazon jungle.</a></h2>
-                <p>Written by <a>Abby Madison</a>, 26/08/2016</p>
-
-                <!--Social shares-->
-                <div class="social-counters ">
-
-                    <!--Facebook-->
-                    <a class="btn btn-fb ">
-                        <i class="fa fa-facebook left "></i>
-                        <span class="hidden-md-down ">Facebook</span>
-                    </a>
-                    <span class="counter ">46</span>
-
-                    <!--Twitter-->
-                    <a class="btn btn-tw ">
-                        <i class="fa fa-twitter left "></i>
-                        <span class="hidden-md-down ">Twitter</span>
-                    </a>
-                    <span class="counter ">22</span>
-
-                    <!--Google+-->
-                    <a class="btn btn-gplus ">
-                        <i class="fa fa-google-plus left "></i>
-                        <span class="hidden-md-down ">Google+</span>
-                    </a>
-                    <span class="counter ">31</span>
-
-                    <!--Comments-->
-                    <a class="btn btn-default ">
-                        <i class="fa fa-comments-o left "></i>
-                        <span class="hidden-md-down ">Comments</span>
-                    </a>
-                    <span class="counter ">18</span>
-
-                </div>
-                <!--/.Social shares-->
-
-            </div>
-            <!--/Post data-->
-
-            <!--Excerpt-->
-            <div class="excerpt">
-                <p>At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio.
-                </p>
-
-                <p>Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus.</p>
-            </div>
-        </div>
+    <!--Card image-->
+    <div class="view overlay hm-white-slight">
+        <img ng-src={{info.image}} alt="" height="100px">
+        <a>
+            <div class="mask"></div>
+        </a>
     </div>
+    <!--/.Card image-->
+
+    <!--Button-->
+    <a class="btn-floating btn-action"><i class="fa fa-chevron-right"></i></a>
+
+    <!--Card content-->
+    <div class="card-block">
+        <!--Title-->
+        <h4 class="card-title">{{info.titulo}}</h4>
+        <hr>
+        <!--Text-->
+        <p class="card-text">{{info.conte}}</p>
+    </div>
+    <!--/.Card content-->
+
+    <!-- Card footer -->
+    
+    <!-- Card footer -->
+
+</div>
+</div>
+<!--/.Card-->
+     
     <!--/First row-->
 
     <hr>
 
-    <!--Second row-->
+
     
-    <div class="row">
-        <div class="col-md-12">
-            <!--Featured image-->
-            <div class="view overlay hm-white-slight">
-                <img src="http://mdbootstrap.com/images/slides/slide%20(43).jpg">
-                <a>
-                    <div class="mask "></div>
-                </a>
-            </div>
-
-            <!--Post data-->
-            <div class="jumbotron">
-                <h2><a>The beauty of the mountain nature.</a></h2>
-                <p>Written by <a>Abby Madison</a>, 22/08/2016</p>
-
-                <!--Social shares-->
-                <div class="social-counters ">
-
-                    <!--Facebook-->
-                    <a class="btn btn-fb ">
-                        <i class="fa fa-facebook left "></i>
-                        <span class="hidden-md-down ">Facebook</span>
-                    </a>
-                    <span class="counter ">23</span>
-
-                    <!--Twitter-->
-                    <a class="btn btn-tw ">
-                        <i class="fa fa-twitter left "></i>
-                        <span class="hidden-md-down ">Twitter</span>
-                    </a>
-                    <span class="counter ">47</span>
-
-                    <!--Google+-->
-                    <a class="btn btn-gplus ">
-                        <i class="fa fa-google-plus left "></i>
-                        <span class="hidden-md-down ">Google+</span>
-                    </a>
-                    <span class="counter ">19</span>
-
-                    <!--Comments-->
-                    <a class="btn btn-default ">
-                        <i class="fa fa-comments-o left "></i>
-                        <span class="hidden-md-down ">Comments</span>
-                    </a>
-                    <span class="counter ">34</span>
-
-                </div>
-                <!--/.Social shares-->
-
-            </div>
-            <!--/Post data-->
-
-            <!--Excerpt-->
-            <div class="excerpt">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-                </p>
-
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-            </div>
-        </div>
-    </div>
-    <!--/Second row-->
-    <div class="row">
-        <div class="col-md-12">
-            <!--Featured image-->
-            <div class="view overlay hm-white-slight">
-                <img src="http://mdbootstrap.com/images/slides/slide%20(43).jpg">
-                <a>
-                    <div class="mask "></div>
-                </a>
-            </div>
-
-            <!--Post data-->
-            <div class="jumbotron">
-                <h2><a>The beauty of the mountain nature.</a></h2>
-                <p>Written by <a>Abby Madison</a>, 22/08/2016</p>
-
-                <!--Social shares-->
-                <div class="social-counters ">
-
-                    <!--Facebook-->
-                    <a class="btn btn-fb ">
-                        <i class="fa fa-facebook left "></i>
-                        <span class="hidden-md-down ">Facebook</span>
-                    </a>
-                    <span class="counter ">23</span>
-
-                    <!--Twitter-->
-                    <a class="btn btn-tw ">
-                        <i class="fa fa-twitter left "></i>
-                        <span class="hidden-md-down ">Twitter</span>
-                    </a>
-                    <span class="counter ">47</span>
-
-                    <!--Google+-->
-                    <a class="btn btn-gplus ">
-                        <i class="fa fa-google-plus left "></i>
-                        <span class="hidden-md-down ">Google+</span>
-                    </a>
-                    <span class="counter ">19</span>
-
-                    <!--Comments-->
-                    <a class="btn btn-default ">
-                        <i class="fa fa-comments-o left "></i>
-                        <span class="hidden-md-down ">Comments</span>
-                    </a>
-                    <span class="counter ">34</span>
-
-                </div>
-                <!--/.Social shares-->
-
-            </div>
-            <!--/Post data-->
-
-            <!--Excerpt-->
-            <div class="excerpt">
-                <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem.
-                </p>
-
-                <p>Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.</p>
-            </div>
-        </div>
-    </div>
-
-    <hr>
-
 </section>
+          </li>
+           </ul>
 		</div>
-<!--/Section: Blog v.4-->
-       
-    	
+
     	
     	
     </main>
