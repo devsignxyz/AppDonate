@@ -1,0 +1,143 @@
+
+    
+       <main>
+       <!--Section: Blog v.1-->
+       <div class="container">
+<section class="section extra-margins">
+
+    <!--Section heading-->
+    <h1 class="section-heading">Welcome to Donate Life </h1>
+    <!--Section sescription-->
+    <h5 class="section-description">Where we can make a difference, helping each other , become a true hero .</h5>
+<hr>
+    <!--First row-->
+    <div class="row">
+
+                
+        <!--First column-->
+        <div class="col-md-5 m-b-r">
+            <div ng-if="!showInfo">
+                    <h3>{{message}}</h3>
+                </div>
+            <!--Featured image-->
+            
+            <div class="view overlay hm-white-slight">
+               
+                <img ng-src={{info.image}} alt="">
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-7 m-b-r">
+            <!--Excerpt-->
+            
+            <h3>{{info.titulo}}</h3>
+            
+            <a class="btn btn-cyan" ui-sref="app.pinfo">Read more</a>
+        </div>
+        <!--/Second column-->
+        
+    </div>
+    <!--/First row-->
+
+    <hr>
+
+    <!--Second row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-7 m-b-r">
+            <!--Excerpt-->
+           
+            <h3>{{donor.name}}.</h3>
+            <h3>Join or find your Giver </h3>
+            
+            <a class="btn btn-cyan" ui-sref="app.find">Go</a>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-5 m-b-r">
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight">
+                <a ui-sref="app.find"> <img  src="/app/images/1052.jpg" alt=""></a>
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+        </div>
+        <!--/Second column-->
+
+    </div>
+    <!--/Second row-->
+
+    <hr>
+
+    <!--Third row-->
+    <div class="row">
+
+        <!--First column-->
+        <div class="col-md-5 m-b-r">
+            <!--Featured image-->
+            <div class="view overlay hm-white-slight">
+                <img ng-src={{need.image}} alt="">
+                <a>
+                    <div class="mask"></div>
+                </a>
+            </div>
+        </div>
+        <!--/First column-->
+
+        <!--Second column-->
+        <div class="col-md-7 m-b-r">
+            <!--Excerpt-->
+            <a href="" class="pink-text"><h5><i class="fa fa-suitcase"></i>HERO</h5></a>
+            <h3>{{need.name}}</h3>
+            <p>You need some help </p>
+            
+            <a class="btn btn-cyan" ui-sref="app.servs">Go</a>
+        </div>
+        <!--/Second column-->
+
+    </div>
+    <!--/Third row-->
+
+</section>
+		 </div>
+<!--/Section: Blog v.1-->
+   
+   <section id="signup" data-type="backgraound" data-speed="4">
+
+  <div class="container">
+    <div class="row">
+        <div class="col-sm-12">  <h2>Are you ready to <strong>make a difference</strong></h2></div>
+    </div>
+    <hr>
+
+    <div class="row">
+    
+      <div class="col-sm-6 col-sm-offset-">
+         
+        
+        <button type="button" class="btn btn-pink btn-lg btn-block" ui-sref="app.servs">Social Services</button>
+        
+      </div><!--end col -->
+      <div class="col-sm-6 col-sm-offset-">
+
+        
+		  <button type="button" class="btn btn-pink btn-lg btn-block" ui-sref="app.become">Blood Bank</button>
+       
+       
+      
+        
+      </div><!--end col -->
+    </div><!--row -->
+    
+    
+    </main>
+    
+    

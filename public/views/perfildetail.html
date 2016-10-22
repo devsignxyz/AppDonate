@@ -1,0 +1,177 @@
+ <main>
+     <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>DonateLife</h2>
+                    <p>Find Your donor or join the list of your blood type
+               
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+		 
+    </section><!--/#cta-->
+    
+    
+    <hr>
+    <!--=======================Card============-->
+    <div class="container">
+    <div class="row">
+    <div class="col-sm-6">
+<div class="card testimonial-card">
+
+    <!--Bacground color-->
+    <div class="card-up default-color-dark">
+    </div>
+
+    <!--Avatar-->
+    <div class="avatar"><img ng-src="{{donor.image}}">
+    </div>
+
+    <div class="card-block">
+        <!--Name-->
+        <h4 class="card-title">{{donor.name}}</h4>
+        <hr>
+        <!--Quotation-->
+        <p><i class="fa fa-quote-left"></i> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos, adipisci</p>
+    </div>
+
+</div>
+<!--/.Card-->
+		</div>
+		<div class="col-sm-6">
+<div class="card testimonial-card">
+
+    <!--Bacground color-->
+    <div class="card-up default-color-dark">
+    </div>
+
+    <!--Avatar-->
+    <div class="avatar"><img src="" class="img-circle img-responsive">
+    </div>
+
+    <div class="card-block">
+        <!--Name-->
+        <h4 class="card-title">Recommendations</h4>
+        <P>Remember that users are not required to Donate </P>
+        
+        <hr>
+       Try to contact you if this list is for something
+        <hr>
+        <!--Quotation-->
+        
+                        
+    </div>
+
+</div>
+		</div>
+		</div>
+		
+		</div>
+<!--/.Card-->
+ 
+ 
+  
+   <div class="container" >
+        <div class="row">
+        <div class="col-sm-4">
+        <input ng-model="search.location">
+       
+<h4>Find it for its location</h4>
+       </div>
+    
+       
+			</div><!--row-->
+		<hr>
+    
+    
+       <ul class="list-group">
+       
+       <li class="list-group-item">
+           <div class="media" ng-repeat="comment in need.comments | orderBy:orderText" >
+        <a class="media-left waves-light" ui-sref="app.perfildetail({id: donor._id})">
+            <img class="img-circle" src="/app/images/CORAZON.jpg" alt="Generic placeholder image">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">{{comment.name}}</h4>
+            <h4 class="media-heading">{{comment.email}}</h4>
+            
+            <h4 class="media-heading">{{comment.location}}</h4>
+        <ul class="rating inline-ul">
+                <li><i class="fa fa-star amber-text"></i></li>
+                <li><i class="fa fa-star amber-text"></i></li>
+                <li><i class="fa fa-star amber-text"></i></li>
+                 <li><i class="fa fa-star amber-text"></i></li>
+                  <li><i class="fa fa-star amber-text"></i></li>
+                
+                
+                
+                
+            </ul>
+            
+        </div>
+       </li>
+    
+      
+    </ul>
+    <hr>
+   
+            <div class="container">
+<div class="card-block" ng-submit="submitDonor()" novalidate >
+
+    <!--Header-->
+    <div class="text-xs-center">
+        <h3><i class="fa fa-envelope"></i> You are a Hero:</h3>
+        <hr class="m-t-2 m-b-2">
+    </div>
+
+    <!--Body-->
+    <p>We'll write rarely, but only the best content.</p>
+    <br>
+
+    <!--Body-->
+    <div class="md-form"name="commentForm" ng-submit="submitComment()" novalidate ng-class="{ 'has-error' : commentForm.name.$error.required && !commentForm.name.$pristine }"> <i class="fa fa-user prefix"></i>
+        <input type="text" id="name." name="name" name="rating" ng-model="mycomment.name" name="name">
+        <label for="form3">Your name</label>
+    </div>
+    
+    <div class="md-form" ng-class="{ 'has-error' : commentForm.email.$error.required && !commentForm.comments.$pristine }">
+        <i class="fa fa-envelope prefix"></i>
+        <input type="text" id="email" name="email" name="email" ng-model="mycomment.email" required  class="form-control">
+        <label for="form2">Your email</label>
+    </div>
+
+    <div class="md-form" ng-class="{ 'has-error' : commentForm.bloodtype.$error.required && !commentForm.bloodtype.$pristine }" >
+        <i class="fa fa-tag prefix"></i>
+        <input type="text" id="bloodtype" name="bloodtype"  ng-model="mycomment.comment" required class="form-control">
+        <label for="form34">Comment</label>
+    </div>
+
+    <div class="md-form" ng-class="{ 'has-error' : commentForm.location.$error.required && !commentForm.location.$pristine }">
+        <i class="fa fa-pencil prefix"></i>
+        <textarea type="text" id="location" name="location" ng-model="mycomment.location" required class="md-textarea"></textarea>
+        <label for="form8">Location</label>
+    </div>
+
+   
+
+
+    <div class="text-xs-center">
+        <button type="submit" class="btn btn-default" ng-disabled="commentForm.$invalid" ng-click="submitComment()">Send</button>
+        <div class="call">
+            <br>
+            <p>Thakyou
+                <br>
+                <span><i class="fa fa-phone"> </i></span> </p>
+        </div>
+    </div>
+    
+    	
+
+</div>
+
+          </div>
+    
+	</main>

@@ -1,0 +1,78 @@
+ <main>
+  
+       <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Social Services</h2>
+                    <p>social services, you need some help, simply fill out the form other heroes will come to the rescue, then you can be your one to help
+               
+                    </p>
+                </div>
+                
+            </div>
+        </div>
+    </section><!--/#cta-->
+   <div class="container">
+    <section class="section">
+
+    <!--Section heading-->
+    
+
+    <div class="row">
+
+        <!--First column -->
+        <div class="col-lg-12 col-md-12 m-b-r" ng-repeat="need in needs">
+            <a ui-sref="app.needDetail({id: need._id})"></a>
+
+            <!--Card-->
+            <div class="card testimonial-card">
+
+                <!--Background color-->
+                <div class="card-up teal lighten-2">
+                </div>
+
+                <!--Avatar-->
+                <a ui-sref="app.needDetail({id: need._id})">
+                <div class="avatar"><img ng-src="{{need.image}}">
+                </div>
+                </a>
+
+                <div class="card-block">
+                    <!--Name-->
+                    <a ui-sref="app.needDetail({id: need._id})">
+                        <h4 class="card-title">{{need.name}}</h4></a>
+                    <hr>
+                    <!--Quotation-->
+                    <p><i class="fa fa-quote-left"></i> {{need.description}}</p>
+                </div>
+
+            </div>
+            
+            <!--/.Card-->
+
+
+        </div>
+        <!--/First column -->
+
+        
+
+        <!--Third column-->
+      
+    </div>
+
+</section>
+     </div><!--end conatiner-->
+<!--Section: Testimonials v.1-->
+
+        <hr>
+        
+  
+      
+        
+    	
+    	
+    	
+    	
+    	
+    </main>

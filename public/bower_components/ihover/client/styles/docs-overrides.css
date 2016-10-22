@@ -1,0 +1,79 @@
+/* line 9, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+body {
+  font-family: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 13, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: "Lustria", Georgia, "Times New Roman", Times, serif; }
+
+/* line 19, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.top-header {
+  background-color: #2D2B41; }
+  /* line 21, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+  .top-header.bs-docs-nav {
+    border-color: #222132; }
+
+/* line 27, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.bs-docs-nav .navbar-nav > .active > a,
+.bs-docs-nav .navbar-nav > .active > a:hover {
+  background-color: #222132; }
+
+/* line 30, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.bs-docs-nav .navbar-toggle {
+  border-color: #222132; }
+  /* line 32, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+  .bs-docs-nav .navbar-toggle:hover {
+    background-color: #383550;
+    border-color: #222132; }
+
+/* line 37, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.navbar-nav {
+  margin: 0 -15px; }
+  @media (min-width: 768px) {
+    /* line 37, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+    .navbar-nav {
+      margin: 0; } }
+
+/* line 43, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.bs-docs-nav .navbar-collapse {
+  border-color: transparent; }
+
+/* line 49, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.header {
+  background: url("../images/bg_header.jpg") repeat-x; }
+
+/* line 53, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.bs-docs-home, .bs-header {
+  color: #c8c8e6; }
+
+/* line 58, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.highlight pre {
+  white-space: pre; }
+
+/* line 62, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.section-heading {
+  padding-top: 80px; }
+  /* line 64, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+  .section-heading.first-child {
+    margin-top: 0;
+    padding-top: 0; }
+
+/* line 70, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.row {
+  margin-top: 15px;
+  margin-bottom: 15px; }
+
+/* line 76, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+.bs-footer {
+  background-color: #2C2C44;
+  color: #575781; }
+  /* line 79, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+  .bs-footer a {
+    color: #575781; }
+
+/* line 85, C:/Users/leo/Documents/AppDonate/bower_components/ihover/client/styles/docs-overrides.scss */
+body {
+  position: relative;
+  padding-top: 50px; }
+
+/*# sourceMappingURL=docs-overrides.css.map */

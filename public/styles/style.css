@@ -1,0 +1,118 @@
+/* YOUR CUSTOM STYLES */
+
+
+        /* TEMPLATE STYLES */
+        
+        html,
+        body,
+      .jumbotron
+        .view,
+        {
+            height: 100%;
+        }
+        /* Navigation*/
+        
+        .navbar {
+            background-color:  #1C2331;
+        }
+        
+        .top-nav-collapse {
+            background-color:  #1C2331;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color:  #1C2331;
+            }
+        }
+
+
+        /*Intro*/
+        
+        .jumbotron {
+            background: url("../images/56082-O8GPRD-839.jpg")no-repeat center center fixed;
+            -webkit-background-size: cover;
+            -moz-background-size: cover;
+            -o-background-size: cover;
+            background-size: cover;
+            height: 830px
+            
+        }
+
+        
+        @media (max-width: 200px) {
+            .full-bg-img,
+            .view {
+                height: auto;
+                position: relative;
+            }
+        }
+
+        
+        .description {
+            padding-top: 25%;
+            padding-bottom: 3rem;
+            color: #1C2331;
+            
+        }
+        
+        @media (max-width: 992px) {
+            .description {
+                padding-top: 7rem;
+                text-align: center;
+            }
+            #app-mockup {
+                max-height: 400px;
+            }
+        }
+        .page-footer {
+            background-color: #1C2331;
+            margin-top: -1px;
+        }
+        
+        @media only screen and (max-width: 768px) {
+            .navbar {
+                background-color: #1C2331;
+            }
+        }
+        /*Call to action*/
+        
+        .flex-center {
+            color: #fff;
+        }
+        
+        
+        #firt{
+            background-color: #f2f2f2;
+        }
+        
+        #signup {
+
+	text-align: center;
+	background: url('../images/woman.jpg') center center repeat fixed;
+	background-size: cover;
+	color: #ffffff;
+	padding: 140px 0;
+}
+#signup h2 {
+	font-weight: normal;
+    text-align: center;
+
+}
+#signup h2 strong {
+	border-bottom: solid 2px #dd5638;
+    text-align: center;
+}
+
+
+.button {
+	border: none;
+	outline: none;
+	border-radius: 2rem;
+	padding: .6rem 3.5rem;
+	font-weight: 700;
+	color: $white;
+	text-decoration: none;
+	text-align: center;
+}
+    

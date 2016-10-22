@@ -1,0 +1,87 @@
+<main>
+     <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Get your possible Giver</h2>
+                    <p>Here you can search for and contact potential donor that there are always people willing to help all are 5 stars
+               
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+                    <a class=" btn-primary btn-lg" href="https://devsignxyz.typeform.com/to/wYU7Tt" target="_blank">Contactarnos!</a>
+                </div>
+            </div>
+        </div>
+        <
+    </section><!--/#cta-->
+        <hr>
+        <div class="container" >
+        <div class="row">
+        <div class="col-sm-4">
+        <input ng-model="search.bloodtype">
+        
+<label>Find your blood type and register to list or find your prospective donor</label>
+       </div>
+    
+       
+			</div><!--row-->
+		<hr>
+    
+    
+       <ul class="list-group">
+       
+       <li class="list-group-item">
+           <div class="media" ng-repeat="donor in donors | filter:search" >
+        <a class="media-left waves-light" ui-sref="app.perfildetail({id: donor._id})">
+            <img class="img-circle" ng-src= "{{donor.image}}" alt="Generic placeholder image">
+        </a>
+        <div class="media-body">
+            <h4 class="media-heading">{{donor.name}}</h4>
+            <h4 class="media-heading">{{donor.bloodtype}}</h4>
+            
+        <ul class="rating inline-ul">
+                <li><i class="fa fa-star amber-text"></i></li>
+                <li><i class="fa fa-star amber-text"></i></li>
+                <li><i class="fa fa-star amber-text"></i></li>
+                 <li><i class="fa fa-star amber-text"></i></li>
+                  <li><i class="fa fa-star amber-text"></i></li>
+                
+                
+                
+                
+            </ul>
+            <p>Find Your donor or join the list of your blood type</p>
+            
+        </div>
+       </li>
+    
+      
+    </ul>
+    
+     
+      
+      
+       <hr>
+
+          </div> 
+      
+
+   
+        <!--===========lista-==========================
+        <div class="container">
+        	<div class="col-md-12">
+    <!--First review-->
+    
+    
+
+    
+		</div>
+    </section>
+
+</main>
+       
+    	
+    	
+    	
+    </main>

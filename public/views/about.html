@@ -1,0 +1,57 @@
+<main>
+     <section id="cta" class="wow fadeIn">
+        <div class="container" ng-controlller="AboutController">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>About</h2>
+                    <p>Donatelife, it born as end the draft of a specialization Conducted in Coursera Offered by Hong Kong University of Science Technology, with great teachers Especially Jogesh Muppala I am enormously Whom I grateful for Such a great effort in esta specialization. to Coursera for the opportunity to many people around the world to Obtain this type of preparation, so I present the team.
+                    </p>
+                </div>
+               
+            </div>
+        </div>
+    </section><!--/#cta-->
+        <hr>
+        
+<!--Section: Team v.2-->
+<section class="section team-section "> 
+<div class="container" >
+    <!--Section heading-->
+    <h1 class="section-heading ">Our amazing team </h1>
+    <!--Section sescription-->
+    <p class="section-description "></p>
+
+    <div class="row text-xs-center">
+
+        <!--First column-->
+        <div class="col-md-4 m-b-r" ng-repeat="team in teams">
+            <div class="avatar">
+                <img ng-src="{{team.image}}">
+                
+            </div>
+            
+            <h4>{{team.name}}</h4>
+            <h5>{{team.designation}}</h5>
+
+            <!--Facebook-->
+            <a type="button" class="btn-floating btn-small btn-fb"><i class="fa fa-facebook"></i></a>
+            <!--Pinterest-->
+            <a type="button" class="btn-floating btn-small btn-pin"><i class="fa fa-pinterest"></i></a>
+            <!--Instagram-->
+            <a type="button" class="btn-floating btn-small btn-ins"><i class="fa fa-instagram"></i></a>
+
+        </div>
+        <!--/First column-->
+
+       
+    </div>
+	</div><!--end container-->
+
+</section>
+<!--/Section: Team v.2-->
+
+        
+    	
+    	
+    	
+    </main>

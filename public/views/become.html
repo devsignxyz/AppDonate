@@ -1,0 +1,85 @@
+
+      <main>
+      
+        <section id="cta" class="wow fadeIn">
+        <div class="container">
+            <div class="row">
+                <div class="col-sm-9">
+                    <h2>Become a Donor</h2>
+                    <p>Help and be a true hero
+               
+                    </p>
+                </div>
+                <div class="col-sm-3 text-right">
+                    
+                </div>
+            </div>
+        </div>
+    </section><!--/#cta-->
+        <hr>
+        
+        
+        
+     
+    
+  <div class="container">
+<div class="card-block" ng-submit="submitDonor()" novalidate >
+
+    <!--Header-->
+    <div class="text-xs-center">
+        <h3><i class="fa fa-envelope"></i> You are a Hero:</h3>
+        <hr class="m-t-2 m-b-2">
+    </div>
+
+    <!--Body-->
+    <p>We'll write rarely, but only the best content.</p>
+    <br>
+
+    <!--Body-->
+    <div class="md-form" ng-class="{ 'has-error' : donorForm.name.$error.required && !donorForm.name.$pristine }">
+        <i class="fa fa-user prefix"></i>
+        <input type="text" id="name." name="name" ng-model=" newdonors.name"  required  class="form-control">
+        <label for="form3">Your name</label>
+    </div>
+    <div class="md-form" ng-class="{ 'has-error' : donorForm.email.$error.required && !donorForm.email.$pristine }">
+        <i class="fa fa-envelope prefix"></i>
+        <input type="text" id="email" name="email" ng-model="newdonors.email"  class="form-control">
+        <label for="form2">Your email</label>
+    </div>
+
+    <div class="md-form" ng-class="{ 'has-error' : donorForm.bloodtype.$error.required && !donorForm.loodtypeb.$pristine }" >
+        <i class="fa fa-tag prefix"></i>
+        <input type="text" id="bloodtype" name="bloodtype" ng-model="newdonors.bloodtype" required class="form-control">
+        <label for="form34">Blood Type</label>
+    </div>
+
+    <div class="md-form" ng-class="{ 'has-error' : donorForm.location.$error.required && !donorForm.location.$pristine }" >
+        <i class="fa fa-pencil prefix"></i>
+        <textarea type="text" id="location" name="location" ng-model="newdonors.location" required class="md-textarea"></textarea>
+        <label for="form8">Location</label>
+    </div>
+
+   
+
+
+    <div class="text-xs-center">
+        <button class="btn btn-default" ng-click="submitDonor()"  ng-disabled="commentForm.$invalid">Hero</button>
+
+        <div class="call">
+            <br>
+            <p>Thakyou
+                <br>
+                <span><i class="fa fa-phone"> </i></span> </p>
+        </div>
+    </div>
+    
+    	
+New task <input type="text" ng-model="newdonor"><button ng-click="save()">Create</button>
+
+</div>
+
+          </div>
+          </div>  
+<!--Naked Form-->
+   
+  

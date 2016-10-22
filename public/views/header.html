@@ -1,0 +1,128 @@
+ <!--Navigation & Intro-->
+   
+
+        <!--Navbar-->
+        <nav class="navbar navbar-dark navbar-fixed-top scrolling-navbar">
+
+            <!-- Collapse button-->
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapseEx">
+            <i class="fa fa-bars"></i></button>
+
+            <div class="container">
+
+                <!--Collapse content-->
+                <div class="collapse navbar-toggleable-xs" id="collapseEx">
+                    <!--Navbar Brand-->
+                    <a class="navbar-brand" href="#/" target="_blank">DonateLife</a>
+                    <!--Links-->
+                <ul class="nav navbar-nav">
+                    <li ng-class="{active:stateis('app')}" class="nav-item ">
+                        <a class="nav-link" ui-sref="app">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li ng-class="{active:stateis('app.find')|| stateis('app.perfildetail')}" class="nav-item">
+                        <a class="nav-link" ui-sref="app.find">Find a Donor</a>
+                    </li>
+                    <li ng-class="{active:stateis('app.bloodb')}" class="nav-item">
+                        <a class="nav-link" ui-sref="app.bloodb">Blood Bank</a>
+                    </li>
+                     
+                    <li ng-class="{active:stateis('app.servs')}"  class="nav-item">
+                        <a class="nav-link" ui-sref="app.servs">Social Services</a>
+                    </li>
+                   
+                    <li ng-class="{active:stateis('app.favoriteDonor')}"  class="nav-item">
+                        <a class="nav-link" ui-sref="app.favoriteDonor">FavoriteDonors</a>
+                    </li>
+                          </ul>
+                          <ul >              
+<li class="nav-item btn-group">
+                    <a class="nav-link dropdown-toggle" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Know us</a>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                        
+                        <a class="dropdown-item" ng-class="{active:stateis('app.about')}"  ui-sref="app.about">About</a>
+                   
+                        <a class="dropdown-item" ui-sref="app.pinfo">Information</a>
+                         <a class="dropdown-item" ui-sref="app.writeus">Writeus</a>
+                    </div>
+                </li>
+                   
+                
+                    <!--Navbar icons-->
+                    <ul class="nav navbar-nav nav-flex-icons">
+                        <li ng-if="!loggedIn"><a ng-click="openLogin()" class="nav-link">
+                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
+                    </li>
+                    <li ng-if="loggedIn">
+                    <a>{{username}}</a>
+                    </li>
+                    <li ng-if="loggedIn">
+                    <a ng-click="logOut()">
+                    <span class="glyphicon glyphicon-log-in"></span> Logout</a>
+                    </li>
+                    </ul>
+
+                </div>
+                <!--/.Collapse content-->
+
+            </div>
+
+        </nav>
+        <!--/.Navbar-->
+<header class="jumbotron   ">
+
+        <!-- Main component for a primary marketing message or call to action -->
+
+          <div class="  ">
+            <div class="full-bg-img flex-center ">
+                <div class="container">
+                    <div class="row" id="home">
+
+                        <!--First column-->
+                        <div class="col-lg-6">
+                            <div class="description">
+                                <h2 class="h2-responsive wow fadeInLeft">Are you Ready to make a Difference </h2>
+                                <hr class="hr-dark">
+                                <p class="wow fadeInLeft" data-wow-delay="0.4s">Welcome, here you can help many to be helped, become a hero by helping others, who knows then another may help. It is simple blood donation can save many lives, it is very important to know a little more touring the site..</p>
+                                <br>
+                                <div class="col-ml-4 col-ml-offset-">
+
+        
+                                    <button type="button" class="btn btn-pink btn-lg btn-block"><a style="color:white" ui-sref="app.find" >Find Donor</a></button>
+        
+      </div><!--end col -->
+      <hr>
+                               <div class="col-ml-4 col-ml-offset-">
+
+        
+        <button type="button" class="btn btn-pink btn-lg btn-block"><a style="color:white"  ui-sref="app.bloodb">Blood Bank </a></button>
+
+        
+      </div><!--end col -->
+      <hr>
+                               <div class="col-ml-4 col-ml-offset-">
+
+        
+        <button type="button" class="btn btn-pink btn-lg btn-block"><a style="color:white" ui-sref="app.servs">Social Services</a></button>
+
+        
+      </div><!--end col -->
+      <hr>
+                                
+
+                            </div>
+                        </div>
+                        <!--/.First column-->
+
+                        <!--Second column-->
+                        <div class="col-lg-4 col-lg-offset-1 flex-center">
+                            <!--Form-->
+                            
+                            <!--/.Form-->
+                        </div>
+                        <!--/Second column-->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--/.Mask-->
+    </header>
